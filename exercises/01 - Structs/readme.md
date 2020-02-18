@@ -141,3 +141,10 @@ std::cout << sizeof(smaller_test); // 16 !!!!
     16 is divisible by 8 (sizeof(double)) so we don't need padding at the end
 */
 ```
+
+## Relevant Guidelines
+
+- [Organize related data into structrues](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rc-org)
+- [Use struct if the data members can vary independently](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rc-struct)
+
+More about rule #2 next time.
