@@ -45,8 +45,8 @@ Instead of dereferencing pointers to structs we could use the operator -> as sho
 test x;
 test * y = &x;
 
-(*y).x = 10; // BAD
-y->x = 10; // GOOD
+(*y).a = 10; // BAD
+y->a = 10; // GOOD
 
 // ^ These 2 are equivalent
 ```
@@ -61,16 +61,15 @@ struct default_test
     int a{10};
     double b{3.14};
     int c{20};
-}
+};
 ```
 
 ```c++
 test x; // No default values
 std::cout << x.a << ' ' << x.b << ' ' << x.c << '\n'; // Undefined Behavior. x.a x.b and x.c haven't been initialized
 
-defautl_test xx;
+default_test xx;
 std::cout << xx.a << ' ' << xx.b << ' ' << xx.c << '\n'; // 10 3.14 20
-
 ```
 
 ## Uniform Initialization
@@ -85,7 +84,7 @@ std::cout << x.a << ' ' << x.b << ' ' << x.c; // 1 2.3 4
 
 default_test partial_x{1, 2.3}; // x.a = 1, x.b = 2.3, x.c = 20
 default_test partial_y{1}; // x.a = 1, x.b = 3.14, x.c = 20
-default_test partial_z{} // Equivalent to default_test partial_z; 
+default_test partial_z{}; // Equivalent to default_test partial_z; 
 ```
 
 ## Size
