@@ -39,23 +39,23 @@ struct Stud
 Implement the following functions
 
 ```c++
-void sort_studs(Stud * first, Stud * last); // Sort range of students by id
+void sort_studs(Stud* first, Stud* last); // Sort range of students by id
 ```
 
 ```c++
-void print_studs(const Stud * first, const Stud * last); // Print ids and names of range of studs in the console
+void print_studs(const Stud* first, const Stud* last); // Print ids and names of range of studs in the console
 ```
 
 ### Not-a-Bonus (way too trivial for a bonus but feel free to send solutions)
 
 ```c++
-void input_studs(const Stud * first, const Stud * last);
+void input_studs(Stud* first, Stud* last);
 // Input range of studs from console
 // Handle cstring input correctly
 ```
 
 ```c++
-void serialize_studs(const Stud * first, const Stud * last, const char * file_name);
+void serialize_studs(const Stud* first, const Stud* last, const char* file_name);
 // Serialize range of Studs into a binary file with the given name
 // Assume nothing wrong goes with the stream
 ```
