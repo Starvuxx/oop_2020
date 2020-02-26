@@ -69,5 +69,5 @@ With the following properties
 - A method that fires an employee with given name from the company and returns false if he doesn't exist (remove only first one with given name)
 - A method that sorts the employees in the company by name
 - A method that gives the total monthly salary of all employees
-- A method that raises the salary of all employees by a given percantage
+- A method that raises the salary of an employee with a given name by a given percantage
 - A method that prints the information about all employees
