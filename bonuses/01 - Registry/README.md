@@ -9,7 +9,7 @@ Implement a class registry that keeps track of inserted integers.
 - The registry should contain a maximum of 100 elements (so we don't deal with the heap for now)
 - Every element should be associated with an **unique** id (whole number)
 - Elements must be sorted by id
-- Method insert that inserts an integer into the registry and returns its id (or -1 if the operation failed somehow)
+- Method insert that inserts an integer into the registry and returns its id (assert that there is enough space)
 - Method erase that removes an element with given id by marking it invalid and returns whether such id existed in the registry
 - Method size that returns the number of valid elements in the registry
 - If no more than half of the elements in the array are valid, compact the registry by removing the invalid ones
